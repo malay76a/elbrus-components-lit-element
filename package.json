@@ -1,0 +1,36 @@
+{
+  "name": "elbrus-components-lit-element",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "copyindex": "cp src/index.html build",
+    "copywc": "cp -r node_modules/@webcomponents/webcomponentsjs/bundles build && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build",
+    "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c",
+    "start": "serve build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malay76a/elbrus-components-lit-element.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.2.3",
+    "@babel/plugin-proposal-decorators": "^7.2.3",
+    "@webcomponents/webcomponentsjs": "^2.2.4",
+    "rollup": "^1.1.0",
+    "rollup-plugin-babel": "^4.3.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "serve": "^10.1.1"
+  },
+  "dependencies": {
+    "lit-element": "^2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/malay76a/elbrus-components-lit-element/issues"
+  },
+  "homepage": "https://github.com/malay76a/elbrus-components-lit-element#readme"
+}
