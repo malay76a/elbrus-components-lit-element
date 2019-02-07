@@ -7,7 +7,9 @@
     "copyindex": "cp src/index.html build",
     "copywc": "cp -r node_modules/@webcomponents/webcomponentsjs/bundles build && cp node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js build",
     "build": "rm -rf build && mkdir build && npm run copyindex && npm run copywc && rollup -c",
-    "start": "serve build"
+    "start": "serve build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,10 @@
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "serve": "^10.1.1"
+    "serve": "^10.1.1",
+    "@storybook/polymer": "^4.1.11",
+    "babel-loader": "^8.0.5",
+    "polymer-webpack-loader": "^2.0.3"
   },
   "dependencies": {
     "lit-element": "^2.0.0"
