@@ -5,7 +5,7 @@ import postcss from 'rollup-plugin-postcss'
 export default [{
     input: ['src/components/index.js'],
     output: {
-        file: 'build/module/components/index.js',
+        dir: 'build/module/components/',
         format: 'es',
         sourcemap: true
     },
@@ -20,7 +20,7 @@ export default [{
     {
         input: ['src/components/index.js'],
         output: {
-            file: 'build/nomodule/components/index.js',
+            dir: 'build/nomodule/components/',
             format: 'system',
             sourcemap: true
         },
