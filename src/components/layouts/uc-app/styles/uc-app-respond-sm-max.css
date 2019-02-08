@@ -1,0 +1,7 @@
+::slotted(uc-nckd) {
+    display: none;
+}
+
+::slotted(uc-header-panel) {
+    display: none;
+}
