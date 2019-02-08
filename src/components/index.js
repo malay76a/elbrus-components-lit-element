@@ -1,3 +1,3 @@
-// import './atoms/my-element/my-element';
+import loadPolyfills from '@open-wc/polyfills-loader';
 
-import './pages/uc-app/uc-app-dynamic';
+loadPolyfills().then(() => import('./dynamic-components.js'));
