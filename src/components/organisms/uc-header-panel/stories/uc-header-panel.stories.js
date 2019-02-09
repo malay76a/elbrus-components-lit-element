@@ -24,8 +24,7 @@ storiesOf('Test', module)
                     FAQ
                 </a>
             </uc-header-panel-nav>
-            <uc-header-panel-user-profile>
-            </uc-header-panel-user-profile>
+            <uc-header-panel-user-profile></uc-header-panel-user-profile>
         `;
         return el;
     });
