@@ -18,6 +18,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-nckd':
             import('./organisms/uc-nckd/uc-nckd.js');
             break;
+        case 'uc-header-panel':
+            import('./organisms/uc-header-panel/uc-header-panel.js');
+            break;
         default:
             break;
     }
