@@ -21,6 +21,12 @@ function lazyLoadCustomElement(tag) {
         case 'uc-header-panel':
             import('./organisms/uc-header-panel/uc-header-panel.js');
             break;
+        case 'uc-header':
+            import('./organisms/uc-header/uc-header.js');
+            break;
+        case 'uc-container':
+            import('./organisms/uc-container/uc-container.js');
+            break;
         default:
             break;
     }
