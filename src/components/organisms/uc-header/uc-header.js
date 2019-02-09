@@ -1,5 +1,6 @@
 import {LitElement, html, css, customElement} from 'lit-element';
 import '../uc-container/uc-container';
+import '../../molecules/uc-header-logo/uc-header-logo';
 
 @customElement('uc-header')
 class UcHeader extends LitElement {
