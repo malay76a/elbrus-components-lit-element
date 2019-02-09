@@ -1,4 +1,5 @@
 import {LitElement, html, css, customElement} from 'lit-element';
+import '../../molecules/uc-header-panel-location/uc-header-panel-location';
 
 @customElement('uc-header-panel')
 class UcHeaderPanel extends LitElement {
