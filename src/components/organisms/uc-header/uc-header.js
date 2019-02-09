@@ -2,6 +2,7 @@ import {LitElement, html, css, customElement} from 'lit-element';
 import '../uc-container/uc-container';
 import '../../molecules/uc-header-logo/uc-header-logo';
 import '../uc-header-catalog/uc-header-catalog';
+import '../../molecules/uc-header-search/uc-header-search';
 
 @customElement('uc-header')
 class UcHeader extends LitElement {
