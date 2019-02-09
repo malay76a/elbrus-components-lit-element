@@ -27,8 +27,8 @@ class UcHeaderPanelLocation extends LitElement {
 
     render() {
         return html`
-            <div class="region-label">Регион:</div>,
-            <div class="region-name">{this.region}</div>
+            <div class="region-label">Регион:</div>
+            <div class="region-name">${this.region}</div>
         `
     }
 }
