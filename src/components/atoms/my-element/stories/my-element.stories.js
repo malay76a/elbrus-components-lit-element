@@ -7,6 +7,3 @@ storiesOf('Test', module)
         const el = document.createElement('my-element');
         return el;
     })
-    .add('my-element-alternative', () => {
-        return html`<my-element>342342</my-element>`;
-    });

@@ -13,7 +13,10 @@ loadPolyfills().then(() => {
 function lazyLoadCustomElement(tag) {
     switch (tag) {
         case 'uc-app':
-            import('./layouts/uc-app/uc-app.js');
+            import('./templates/uc-app/uc-app.js');
+            break;
+        case 'uc-nckd':
+            import('./organisms/uc-nckd/uc-nckd.js');
             break;
         default:
             break;
