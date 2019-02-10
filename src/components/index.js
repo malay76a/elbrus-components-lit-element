@@ -33,6 +33,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-header-shop-list':
             import('./organisms/uc-header-shop-list/uc-header-shop-list.js');
             break;
+        case 'uc-header-basket':
+            import('./organisms/uc-header-basket/uc-header-basket.js');
+            break;
         default:
             break;
     }

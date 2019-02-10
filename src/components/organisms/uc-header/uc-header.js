@@ -4,6 +4,7 @@ import '../../molecules/uc-header-logo/uc-header-logo';
 import '../uc-header-catalog/uc-header-catalog';
 import '../../molecules/uc-header-search/uc-header-search';
 import '../uc-header-shop-list/uc-header-shop-list';
+import '../uc-header-basket/uc-header-basket';
 
 @customElement('uc-header')
 class UcHeader extends LitElement {
