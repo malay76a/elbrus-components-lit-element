@@ -42,6 +42,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-breadcrumb-list':
             import('./molecules/uc-breadcrumb-list/uc-breadcrumb-list.js');
             break;
+        case 'uc-page-title':
+            import('./molecules/uc-page-title/uc-page-title.js');
+            break;
         default:
             break;
     }
