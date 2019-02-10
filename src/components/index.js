@@ -29,6 +29,10 @@ function lazyLoadCustomElement(tag) {
             break;
         case 'uc-header-catalog':
             import('./organisms/uc-header-catalog/uc-header-catalog.js');
+            break;
+        case 'uc-header-shop-list':
+            import('./organisms/uc-header-shop-list/uc-header-shop-list.js');
+            break;
         default:
             break;
     }
