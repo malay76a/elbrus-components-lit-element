@@ -39,6 +39,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-seo-block':
             import('./organisms/uc-seo-block/uc-seo-block.js');
             break;
+        case 'uc-breadcrumb-list':
+            import('./molecules/uc-breadcrumb-list/uc-breadcrumb-list.js');
+            break;
         default:
             break;
     }
