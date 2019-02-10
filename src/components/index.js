@@ -45,6 +45,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-page-title':
             import('./molecules/uc-page-title/uc-page-title.js');
             break;
+        case 'uc-facet-and-list':
+            import('./organisms/uc-facet-and-list/uc-facet-and-list.js');
+            break;
         default:
             break;
     }
