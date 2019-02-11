@@ -1,6 +1,7 @@
 import {LitElement, html, css, customElement, unsafeCSS} from 'lit-element';
 import style from './uc-facet-toggle.css';
 import '../../atoms/uc-facet-slider/uc-facet-slider';
+import '../../molecules/uc-facet-checkbox-group/uc-facet-checkbox-group';
 
 @customElement('uc-facet-toggle')
 class UcFacetToggle extends LitElement {
