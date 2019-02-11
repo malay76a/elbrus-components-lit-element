@@ -1,0 +1,57 @@
+import cookies from 'js-cookie';
+
+export const countDay = 9999;
+export const regionCookieExpiresDay = 365;
+export const lastConfirmedRegionCookieDay = 365;
+export const standardPath = '/';
+export const regionCookieName = '_regionID';
+export const lastConfirmedRegionId = 'lastConfirmedRegionID';
+export const storeCookieId = 'FAV_SHOP';
+export const storeCookieName = 'storeName';
+export const cartsWereMerged = 'cartsWereMerged';
+export const comparisonCookieName = 'comparison';
+export const shopListCookieName = 'shoppingList';
+export const recentlyViewedCookieName = 'recently_viewed';
+export const userAuth = 'user-auth';
+export const accessTokenLife = 'access-token-life';
+export const idTokenCookieName = 'id-token';
+export const idTokenExistCookieName = 'id-token-exist';
+export const cdTokenCookieName = 'cd-token';
+export const userDataCookieName = 'userData';
+export const testModeMessageCookieName = 'testModeMessage';
+export const changeShopMessageCookieName = 'changeShopMessage';
+export const transactionIdCookieName = 'transactionId';
+export const deliveryAvailables = 'deliveryAvailables';
+export const serviceLevelAvailables = 'serviceLevelAvailables';
+export const removeCartNumberCookieAction = 'REMOVE_CART_NUMBER_COOKIE';
+export const createCartNumberCookieAction = 'CREATE_CART_NUMBER_COOKIE';
+export const unavailableProducts = 'unavailableProducts';
+export const totalPriceDelivery = 'totalPriceDelivery';
+export const totalPriceIncludingVat = 'totalPriceIncludingVAT';
+export const selectedDeliveryMode = 'selectedDeliveryMode';
+export const selectedServiceLevel = 'selectedServiceLevel';
+export const selectedStoreId = 'selectedStoreId';
+export const selectedDate = 'selectedDate';
+export const selectedAddress = 'selectedAddress';
+export const selectedTime = 'selectedTime';
+export const checkoutProducts = 'checkoutProducts';
+export const cartInfo = 'cartInfo';
+export const abandonedCart = 'abandonedCart';
+export const cartMergedFlag = 'cartMergedFlag';
+export const cartInfoLifeTime = 30;
+export const cookieChunk = 200;
+export const digitOnlyRegexp = new RegExp('[0-9]');
+export const colonSeparator = ':';
+export const commaSeparator = ',';
+export const semicolonSeparator = ';';
+export const abandonedCartLifeTime = 1;
+export const cookieAccepted = 'cookie_accepted';
+export const autoLoginAuthenticationTokenCookieName = 'autologin.jwt';
+export const useLocalStorageForShopList = 'useLocalStorageForShopList';
+export const userGeolocationCookieName = 'user-geolocation';
+export const checkoutRegionChanged = 'checkoutRegionChanged';
+
+export function getCookieAsArray(name) {
+  const str = cookies.get(name);
+  return typeof str === 'string' && str !== '' ? str.split(commaSeparator) : [];
+}
