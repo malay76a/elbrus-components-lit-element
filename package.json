@@ -22,7 +22,7 @@
     "@babel/plugin-proposal-class-properties": "^7.2.3",
     "@babel/plugin-proposal-decorators": "^7.2.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@storybook/polymer": "^4.1.11",
+    "@storybook/polymer": "5.0.0-beta.2",
     "@webcomponents/webcomponentsjs": "^2.2.4",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.0",
@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@open-wc/polyfills-loader": "^0.2.1",
-    "lit-element": "^2.0.0"
+    "lit-element": "^2.0.1"
   },
   "bugs": {
     "url": "https://github.com/malay76a/elbrus-components-lit-element/issues"

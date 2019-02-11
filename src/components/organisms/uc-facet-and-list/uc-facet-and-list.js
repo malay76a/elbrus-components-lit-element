@@ -79,7 +79,3 @@ class UcFacetAndList extends LitElement {
         `;
     }
 }
-
-
-
-
