@@ -37,7 +37,9 @@
     "@open-wc/polyfills-loader": "^0.2.1",
     "js-cookie": "^2.2.0",
     "lit-element": "^2.0.1",
-    "uniqid": "^5.0.3"
+    "nouislider": "^13.1.0",
+    "uniqid": "^5.0.3",
+    "wnumb": "^1.1.0"
   },
   "bugs": {
     "url": "https://github.com/malay76a/elbrus-components-lit-element/issues"

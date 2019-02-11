@@ -1,0 +1,400 @@
+:host {
+    position: relative; }
+
+@media (min-width: 768px) {
+    .slider {
+        margin-top: 10px; } }
+
+@media (max-width: 767px) {
+    .slider {
+        margin-top: 0.71429em; } }
+
+.button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+@media (min-width: 768px) {
+    .button-group {
+        margin-top: 15px; } }
+@media (max-width: 767px) {
+    .button-group {
+        margin-top: 1.07143em; } }
+
+.success {
+    color: #ffffff;
+    background-color: #66c05d;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase; }
+@media (min-width: 768px) {
+    .success {
+        padding: 7px 11px;
+        font-size: 10px; } }
+@media (max-width: 767px) {
+    .success {
+        font-size: 0.71429em;
+        padding: 0.7em 1.1em; } }
+
+.reset {
+    cursor: pointer;
+    color: #66c05d;
+    text-transform: capitalize; }
+@media (min-width: 768px) {
+    .reset {
+        font-size: 11px;
+        margin-left: 10px; } }
+@media (max-width: 767px) {
+    .reset {
+        font-size: 0.78571em;
+        margin-left: 0.90909em; } }
+
+.input-fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+@media (min-width: 768px) {
+    .input-fields {
+        margin-top: 15px; } }
+@media (max-width: 767px) {
+    .input-fields {
+        margin-top: 1.07143em; } }
+
+input {
+    border: 1px solid #ddd;
+    outline: 0;
+    text-align: center;
+    width: 38%; }
+@media (min-width: 768px) {
+    input {
+        font-size: 14px;
+        padding: 5px 10px; } }
+@media (max-width: 767px) {
+    input {
+        font-size: 1em;
+        padding: 0.35714em 0.71429em; } }
+input:focus {
+    border-color: #66c05d; }
+
+.delimiter {
+    display: inline-block; }
+@media (min-width: 768px) {
+    .delimiter {
+        margin-left: 5px;
+        margin-right: 5px; } }
+@media (max-width: 767px) {
+    .delimiter {
+        margin-left: 0.71429em;
+        margin-right: 0.71429em; } }
+
+.noUi-target,
+.noUi-target * {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-touch-action: none;
+    touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.noUi-target {
+    position: relative;
+    direction: ltr; }
+
+.noUi-base,
+.noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1; }
+
+/* Wrapper for all connect elements.
+ */
+.noUi-connects {
+    overflow: hidden;
+    z-index: 0; }
+
+.noUi-connect,
+.noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0; }
+@media (min-width: 768px) {
+    .noUi-connect,
+    .noUi-origin {
+        width: calc(100% - 16px); } }
+@media (max-width: 767px) {
+    .noUi-connect,
+    .noUi-origin {
+        width: calc(100% - 1.28571em); } }
+
+/* Offset direction
+ */
+html:not([dir="rtl"]) .noUi-horizontal .noUi-origin {
+    left: auto;
+    right: 0; }
+
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.noUi-horizontal .noUi-origin {
+    height: 0; }
+
+.noUi-handle {
+    position: absolute; }
+
+.noUi-state-tap .noUi-connect,
+.noUi-state-tap .noUi-origin {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    -o-transition: transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s; }
+
+.noUi-state-drag * {
+    cursor: inherit !important; }
+
+/* Slider size and handle placement;
+ */
+@media (min-width: 768px) {
+    .noUi-horizontal {
+        height: 8px; } }
+
+@media (max-width: 767px) {
+    .noUi-horizontal {
+        height: 0.57143em; } }
+
+.noUi-horizontal .noUi-handle {
+    left: 100%;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.36);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ececec));
+    background-image: -webkit-linear-gradient(top, #ffffff, #ececec);
+    background-image: -o-linear-gradient(top, #ffffff, #ececec);
+    background-image: linear-gradient(to bottom, #ffffff, #ececec); }
+@media (min-width: 768px) {
+    .noUi-horizontal .noUi-handle {
+        width: 18px;
+        height: 15px;
+        top: -4px; } }
+@media (max-width: 767px) {
+    .noUi-horizontal .noUi-handle {
+        width: 1.28571em;
+        height: 1.07143em;
+        top: -0.28571em; } }
+
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.noUi-target {
+    background: #FAFAFA;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px; }
+@media (min-width: 768px) {
+    .noUi-target {
+        -webkit-box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB;
+        box-shadow: inset 0 1px 1px #F0F0F0, 0 3px 6px -5px #BBB; } }
+@media (max-width: 767px) {
+    .noUi-target {
+        -webkit-box-shadow: inset 0 1px 1px #F0F0F0, 0 0.21429em 0.42857em -0.35714em #BBB;
+        box-shadow: inset 0 1px 1px #F0F0F0, 0 0.21429em 0.42857em -0.35714em #BBB; } }
+
+.noUi-connects {
+    border-radius: 3px; }
+
+.noUi-connect {
+    background: #66c05d; }
+
+/* Handles and cursors;
+ */
+.noUi-draggable {
+    cursor: ew-resize; }
+
+.noUi-handle {
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #FFF;
+    cursor: default; }
+@media (min-width: 768px) {
+    .noUi-handle {
+        -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+        box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB; } }
+@media (max-width: 767px) {
+    .noUi-handle {
+        -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 0.5em #EBEBEB, 0 0.21429em 0.42857em -0.21429em #BBB;
+        box-shadow: inset 0 0 1px #FFF, inset 0 1px 0.5em #EBEBEB, 0 0.21429em 0.42857em -0.21429em #BBB; } }
+
+@media (min-width: 768px) {
+    .noUi-active {
+        -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+        box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB; } }
+
+@media (max-width: 767px) {
+    .noUi-active {
+        -webkit-box-shadow: inset 0 0 1px #FFF, inset 0 1px 0.5em #DDD, 0 0.21429em 0.42857em -0.21429em #BBB;
+        box-shadow: inset 0 0 1px #FFF, inset 0 1px 0.5em #DDD, 0 0.21429em 0.42857em -0.21429em #BBB; } }
+
+/* Handle stripes;
+ */
+.noUi-handle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHZpZXdCb3g9IjAgMCA0IDQiPiAgICA8cGF0aCBmaWxsPSIjNjZDMDVEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0wIDJsNC0ydjR6Ii8+PC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: center; }
+@media (min-width: 768px) {
+    .noUi-handle:before {
+        background-size: 4px 4px; } }
+@media (max-width: 767px) {
+    .noUi-handle:before {
+        background-size: 0.28571em 0.28571em; } }
+
+.noUi-handle-upper:before {
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1); }
+
+/* Disabled state;
+ */
+[disabled] .noUi-connect {
+    background: #B8B8B8; }
+
+[disabled].noUi-target,
+[disabled].noUi-handle,
+[disabled] .noUi-handle {
+    cursor: not-allowed; }
+
+/* Base;
+ *
+ */
+.noUi-pips,
+.noUi-pips * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+.noUi-pips {
+    position: absolute;
+    color: #999; }
+
+/* Values;
+ *
+ */
+.noUi-value {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center; }
+
+.noUi-value-sub {
+    color: #ccc; }
+@media (min-width: 768px) {
+    .noUi-value-sub {
+        font-size: 10px; } }
+@media (max-width: 767px) {
+    .noUi-value-sub {
+        font-size: 0.71429em; } }
+
+/* Markings;
+ *
+ */
+.noUi-marker {
+    position: absolute;
+    background: #CCC; }
+
+.noUi-marker-sub {
+    background: #AAA; }
+
+.noUi-marker-large {
+    background: #AAA; }
+
+.noUi-pips-horizontal {
+    top: 100%;
+    left: 0;
+    width: 100%; }
+@media (min-width: 768px) {
+    .noUi-pips-horizontal {
+        padding: 10px 0;
+        height: 80px; } }
+@media (max-width: 767px) {
+    .noUi-pips-horizontal {
+        padding: 0.71429em 0;
+        height: 5.71429em; } }
+
+.noUi-value-horizontal {
+    -webkit-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); }
+
+.noUi-marker-horizontal.noUi-marker {
+    margin-left: -1px; }
+@media (min-width: 768px) {
+    .noUi-marker-horizontal.noUi-marker {
+        width: 2px;
+        height: 5px; } }
+@media (max-width: 767px) {
+    .noUi-marker-horizontal.noUi-marker {
+        width: 0.14286em;
+        height: 0.35714em; } }
+
+@media (min-width: 768px) {
+    .noUi-marker-horizontal.noUi-marker-sub {
+        height: 10px; } }
+
+@media (max-width: 767px) {
+    .noUi-marker-horizontal.noUi-marker-sub {
+        height: 0.71429em; } }
+
+@media (min-width: 768px) {
+    .noUi-marker-horizontal.noUi-marker-large {
+        height: 15px; } }
+
+@media (max-width: 767px) {
+    .noUi-marker-horizontal.noUi-marker-large {
+        height: 1.07143em; } }
+
+.noUi-tooltip {
+    display: block;
+    position: absolute;
+    border: 1px solid #D9D9D9;
+    border-radius: 3px;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    white-space: nowrap; }
+@media (min-width: 768px) {
+    .noUi-tooltip {
+        padding: 5px; } }
+@media (max-width: 767px) {
+    .noUi-tooltip {
+        padding: 0.35714em; } }
+
+.noUi-horizontal .noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%; }

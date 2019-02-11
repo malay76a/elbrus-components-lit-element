@@ -63,6 +63,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-current-filter':
             import('./organisms/uc-current-filter/uc-current-filter');
             break;
+        case 'uc-facet-toggle':
+            import('./molecules/uc-facet-toggle/uc-facet-toggle.js');
+            break;
         default:
             break;
     }
