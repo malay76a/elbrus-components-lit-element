@@ -4,6 +4,7 @@ import { getElemPos } from "../../../utils/utils";
 import '../../atoms/uc-plp-item-img/uc-plp-item-img';
 import '../../atoms/uc-plp-item-title/uc-plp-item-title';
 import '../../atoms/uc-plp-item-rating/uc-plp-item-rating';
+import '../../molecules/uc-plp-item-description/uc-plp-item-description';
 
 @customElement('uc-plp-item')
 class UcPlpItem extends LitElement{
