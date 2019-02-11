@@ -255,9 +255,9 @@
                             </uc-plp-item-prices>
 
                             <uc-plp-item-buttons>
-                                <uc-plp-button type-button="compare">Сравнить</uc-plp-button>
-                                <uc-plp-button type-button="shoping-list">В список</uc-plp-button>
-                                <uc-plp-button type-button="buy">В корзину</uc-plp-button>
+                                <uc-plp-button typebutton="compare">Сравнить</uc-plp-button>
+                                <uc-plp-button typebutton="shoping-list">В список</uc-plp-button>
+                                <uc-plp-button typebutton="buy">В корзину</uc-plp-button>
                             </uc-plp-item-buttons>
 
                         </uc-plp-item>
@@ -306,9 +306,9 @@
                             </uc-plp-item-prices>
 
                             <uc-plp-item-buttons>
-                                <uc-plp-button type-button="compare">Сравнить</uc-plp-button>
-                                <uc-plp-button type-button="shoping-list">В список</uc-plp-button>
-                                <uc-plp-button type-button="buy">В корзину</uc-plp-button>
+                                <uc-plp-button typebutton="compare">Сравнить</uc-plp-button>
+                                <uc-plp-button typebutton="shoping-list">В список</uc-plp-button>
+                                <uc-plp-button typebutton="buy">В корзину</uc-plp-button>
                             </uc-plp-item-buttons>
 
                         </uc-plp-item>
@@ -433,7 +433,7 @@
 </uc-app>
 
 <script>
-    import("./module/components/index.js");
+    import("./module/index.js");
     window.supportsDynamicImport = true;
 </script>
 <script>
@@ -441,7 +441,7 @@
         const systemJsLoaderTag = document.createElement('script');
         systemJsLoaderTag.src = 'https://unpkg.com/systemjs@2.0.0/dist/s.min.js';
         systemJsLoaderTag.addEventListener('load', function () {
-            System.import('./nomodule/components/index.js');
+            System.import('./nomodule/index.js');
         });
         document.head.appendChild(systemJsLoaderTag);
     }
