@@ -57,6 +57,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-plp-item':
             import('./organisms/uc-plp-item/uc-plp-item.js');
             break;
+        case 'uc-facets-list':
+            import('./organisms/uc-facets-list/uc-facets-list.js');
+            break;
         default:
             break;
     }
