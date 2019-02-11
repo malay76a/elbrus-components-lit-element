@@ -60,6 +60,9 @@ function lazyLoadCustomElement(tag) {
         case 'uc-facets-list':
             import('./organisms/uc-facets-list/uc-facets-list.js');
             break;
+        case 'uc-current-filter':
+            import('./organisms/uc-current-filter/uc-current-filter');
+            break;
         default:
             break;
     }
