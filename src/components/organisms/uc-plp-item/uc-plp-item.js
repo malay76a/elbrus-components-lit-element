@@ -2,6 +2,8 @@ import {LitElement, html, css, customElement} from 'lit-element';
 import { addData } from '../../../layers/ga';
 import { getElemPos } from "../../../utils/utils";
 import '../../atoms/uc-plp-item-img/uc-plp-item-img';
+import '../../atoms/uc-plp-item-title/uc-plp-item-title';
+import '../../atoms/uc-plp-item-rating/uc-plp-item-rating';
 
 @customElement('uc-plp-item')
 class UcPlpItem extends LitElement{
