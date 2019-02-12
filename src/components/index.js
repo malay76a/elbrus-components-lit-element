@@ -66,6 +66,12 @@ function lazyLoadCustomElement(tag) {
         case 'uc-facet-toggle':
             import('./molecules/uc-facet-toggle/uc-facet-toggle.js');
             break;
+        case 'uc-footer':
+            import('./organisms/uc-footer/uc-footer.js');
+            break;
+        case 'uc-footer-menu':
+            import('./organisms/uc-footer-menu/uc-footer-menu.js');
+            break;
         default:
             break;
     }
