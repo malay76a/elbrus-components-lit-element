@@ -11,7 +11,13 @@ export default [{
     },
     plugins: [
         resolve(),
-        babel(),
+        babel({
+            "plugins": [
+                '@babel/plugin-proposal-class-properties',
+                ['@babel/proposal-decorators', { decoratorsBeforeExport: true } ],
+                '@babel/plugin-syntax-dynamic-import'
+            ]
+        }),
         postcss({
             extract: false,
             inject: false,
@@ -27,7 +33,24 @@ export default [{
         },
         plugins: [
             resolve(),
-            babel(),
+            babel({
+                "presets": [
+                    [
+                        "@babel/preset-env",
+                        {
+                            "targets": {
+                                "chrome": "58",
+                                "ie": "11"
+                            }
+                        }
+                    ]
+                ],
+                "plugins": [
+                    '@babel/plugin-proposal-class-properties',
+                    ['@babel/proposal-decorators', { decoratorsBeforeExport: true } ],
+                    '@babel/plugin-syntax-dynamic-import'
+                ]
+            }),
             postcss({
                 extract: false,
                 inject: false,
