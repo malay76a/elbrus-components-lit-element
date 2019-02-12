@@ -129,7 +129,7 @@ class UcHeaderBasket extends LitElement {
             <slot></slot>
             <div class="basket-list-icon" data-count="${this.count}"></div>
             ${isMobile() ? html`` : html`
-                <div class="basket-list-text">КОРЗИНА</div>,
+                <div class="basket-list-text">КОРЗИНА</div>
                 <uc-header-list-popup datatype="buy-list" datalist="${this.dataList}"></uc-header-list-popup>
             `}
         `;
