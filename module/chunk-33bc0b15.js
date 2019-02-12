@@ -1,32 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-import './chunk-9e5cb087.js';
-
-let UcHeaderPanelLocation = _decorate([customElement('uc-header-panel-location')], function (_initialize, _LitElement) {
-  class UcHeaderPanelLocation extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderPanelLocation,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: String
-      })],
-      key: "region",
-      value: void 0
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as M,b as j,c as L,d as u,e as g,f as N}from"./chunk-96426fcb.js";import"./chunk-9e5cb087.js";M([j("uc-header-panel-location")],function(M,j){return{F:class extends j{constructor(...j){super(...j),M(this)}},d:[{kind:"field",decorators:[L({type:String})],key:"region",value:void 0},{kind:"field",static:!0,key:"styles",value:()=>u`
         :host {
             display: flex;
             align-items: center;
@@ -45,41 +17,10 @@ let UcHeaderPanelLocation = _decorate([customElement('uc-header-panel-location')
             text-decoration: underline;
             color: #66c05d;
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return g`
             <div class="region-label">Регион:</div>
             <div class="region-name">${this.region}</div>
-        `;
-      }
-    }]
-  };
-}, LitElement);
-
-let UcHeaderPanelNav = _decorate([customElement('uc-header-panel-nav')], function (_initialize, _LitElement) {
-  class UcHeaderPanelNav extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderPanelNav,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+        `}}]}},N),M([j("uc-header-panel-nav")],function(M,j){return{F:class extends j{constructor(...j){super(...j),M(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>u`
         :host {
             display: flex;
             align-items: center;
@@ -135,40 +76,9 @@ let UcHeaderPanelNav = _decorate([customElement('uc-header-panel-nav')], functio
             height: 16px;
             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4gICAgPHBhdGggZmlsbD0iIzQ0NCIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOCAwYzQuNDU3IDAgOCAzLjU0MyA4IDhzLTMuNTQzIDgtOCA4YTcuOTUgNy45NSAwIDAgMS04LThjMC00LjQ1NyAzLjU0My04IDgtOHptLjU3MSA4LjkxNGMuMjI5LS4yMjguNDU4LS41NzEuNjg2LS42ODUuNTcyLS40NTggMS4wMjktLjkxNSAxLjM3Mi0xLjM3MmExLjkzIDEuOTMgMCAwIDAgLjM0Mi0xLjE0M2MwLS42ODUtLjM0Mi0xLjM3MS0uOTE0LTEuODI4LS41NzEtLjQ1Ny0xLjQ4Ni0uOC0yLjI4Ni0uNjg2LS44IDAtMS42LjIyOS0yLjI4NS44LS41NzIuMzQzLS45MTUgMS4wMjktLjkxNSAxLjgyOWwxLjYuMjI4Yy4xMTUtLjQ1Ny4yMjktLjguNTcyLTEuMTQzYTEuOTMgMS45MyAwIDAgMSAxLjE0My0uMzQzYy4zNDMgMCAuOC4xMTUgMS4wMjguMzQzLjIyOS4xMTUuNDU3LjQ1Ny40NTcuOCAwIC4yMjktLjExNC40NTctLjIyOC42ODYtLjM0My4yMjktLjY4Ni40NTctLjkxNC44LS40NTguMzQzLS44LjY4Ni0xLjAyOSAxLjE0My0uMjI5LjM0My0uMzQzLjY4Ni0uMjI5IDEuMTQzdi40NTdoMS42YTEuNTg2IDEuNTg2IDAgMCAxIDAtMS4wMjl6bS4xMTUgMy4zMTV2LTEuNzE1SDYuOTd2MS43MTVoMS43MTV6Ii8+PC9zdmc+); 
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return g`
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
-
-let UcHeaderPanelUserProfile = _decorate([customElement('uc-header-panel-user-profile')], function (_initialize, _LitElement) {
-  class UcHeaderPanelUserProfile extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderPanelUserProfile,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+        `}}]}},N),M([j("uc-header-panel-user-profile")],function(M,j){return{F:class extends j{constructor(...j){super(...j),M(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>u`
         :host {
             padding-left: 16px;
             padding-right: 16px;
@@ -200,41 +110,10 @@ let UcHeaderPanelUserProfile = _decorate([customElement('uc-header-panel-user-pr
         .registration:hover {
             text-decoration: underline;
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return g`
             <div class="login">вход</div>
             <a href="/lk/register/" class="registration">регистрация</a>
-        `;
-      }
-    }]
-  };
-}, LitElement);
-
-let UcHeaderPanel = _decorate([customElement('uc-header-panel')], function (_initialize, _LitElement) {
-  class UcHeaderPanel extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderPanel,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+        `}}]}},N),M([j("uc-header-panel")],function(M,j){return{F:class extends j{constructor(...j){super(...j),M(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>u`
         :host {
             display: block;
             height: 30px;
@@ -251,22 +130,11 @@ let UcHeaderPanel = _decorate([customElement('uc-header-panel')], function (_ini
         uc-container {
             height: 100%;
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return g`
             <uc-container>
                 <div class="header-panel-wrapper">
                     <slot />
                 </div>
             </uc-container>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},N);
 //# sourceMappingURL=chunk-33bc0b15.js.map

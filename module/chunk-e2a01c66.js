@@ -1,44 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-import { a as isMobile } from './chunk-bb8482fa.js';
-import './chunk-e5954f7a.js';
-
-let UcHeaderShopList = _decorate([customElement('uc-header-shop-list')], function (_initialize, _LitElement) {
-  class UcHeaderShopList extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderShopList,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: Number
-      })],
-      key: "count",
-
-      value() {
-        return 0;
-      }
-
-    }, {
-      kind: "field",
-      decorators: [property({
-        type: String
-      })],
-      key: "dataList",
-      value: void 0
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as M,b as t,c as j,d as i,e as L,f as u}from"./chunk-96426fcb.js";import{a as o}from"./chunk-bb8482fa.js";import"./chunk-e5954f7a.js";M([t("uc-header-shop-list")],function(M,t){return{F:class extends t{constructor(...t){super(...t),M(this)}},d:[{kind:"field",decorators:[j({type:Number})],key:"count",value:()=>0},{kind:"field",decorators:[j({type:String})],key:"dataList",value:void 0},{kind:"field",static:!0,key:"styles",value:()=>i`
         :host {
             position: relative;
             display: flex;
@@ -150,25 +110,14 @@ let UcHeaderShopList = _decorate([customElement('uc-header-shop-list')], functio
             top: calc(100% - 1px);
             right: -1px;
             display: none; }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return L`
             <slot></slot>
             <div class="shop-list-icon" data-count="${this.count}"></div>
-            ${isMobile() ? html`` : html`
+            ${o()?L``:L`
                 <div class="shop-list-text">СПИСОК ПОКУПОК</div>
                 <div class="shop-list-tooltip"
                      data-text="Просто добавьте сюда товары, распечатайте список и пользуйтесь им в магазине">?</div>
                 <uc-header-list-popup dataType="shop-list" dataList="${this.dataList}"></uc-header-list-popup>
             `}
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},u);
 //# sourceMappingURL=chunk-e2a01c66.js.map

@@ -23,7 +23,7 @@
     "@babel/plugin-proposal-decorators": "^7.2.3",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/preset-env": "^7.3.1",
-    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@bundled-es-modules/url-polyfill": "^1.1.4",
     "@storybook/polymer": "5.0.0-beta.2",
     "@webcomponents/webcomponentsjs": "^2.2.4",
     "babel-loader": "^8.0.5",
@@ -33,9 +33,11 @@
     "rollup-plugin-babel": "^4.3.0",
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "serve": "^10.1.1"
+    "serve": "^10.1.1",
+    "rollup-plugin-terser": "^4.0.4"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "@open-wc/polyfills-loader": "^0.2.1",
     "js-cookie": "^2.2.0",
     "lit-element": "^2.0.1",

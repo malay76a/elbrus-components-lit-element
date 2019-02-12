@@ -1,25 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-import { a as isMobile } from './chunk-bb8482fa.js';
-
-let UcFacetAndList = _decorate([customElement('uc-facet-and-list')], function (_initialize, _LitElement) {
-  class UcFacetAndList extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcFacetAndList,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as i,b as e,d as t,e as a,f as s}from"./chunk-96426fcb.js";import{a as r}from"./chunk-bb8482fa.js";i([e("uc-facet-and-list")],function(i,e){return{F:class extends e{constructor(...e){super(...e),i(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>t`
         @media (min-width: 992px) {
         :host {
                 display: -ms-grid;
@@ -76,30 +55,10 @@ let UcFacetAndList = _decorate([customElement('uc-facet-and-list')], function (_
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain; }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "toggleFilter",
-      value: function toggleFilter(e) {
-        let event = new CustomEvent('filterShow', {
-          detail: e
-        });
-        this.dispatchEvent(event);
-      }
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return !isMobile() ? html`<slot></slot>` : html`
+    `},{kind:"method",key:"toggleFilter",value:function(i){let e=new CustomEvent("filterShow",{detail:i});this.dispatchEvent(e)}},{kind:"method",key:"render",value:function(){return r()?a`
             <slot></slot>
             <div class="hamburger" @click="${this.toggleFilter}">
                 <div class="filter-icon"></div>
             </div>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `:a`<slot></slot>`}}]}},s);
 //# sourceMappingURL=chunk-8264cb29.js.map

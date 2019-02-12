@@ -1,27 +1,2 @@
-System.register([], function (exports, module) {
-    'use strict';
-    return {
-        execute: function () {
-
-            exports('a', uniqid);
-
-            var pid = process && process.pid ? process.pid.toString(36) : '';
-            var address = '';
-
-            function now() {
-              var time = Date.now();
-              var last = now.last || time;
-              return now.last = time > last ? time : last + 1;
-            }
-
-            function process(prefix) {
-              return (prefix || '') + pid + now().toString(36);
-            }
-            function uniqid (prefix) {
-              return (prefix || '') + address + pid + now().toString(36);
-            }
-
-        }
-    };
-});
+System.register([],function(t,n){"use strict";return{execute:function(){t("a",function(t){return(t||"")+r+n+e().toString(36)});var n=i&&i.pid?i.pid.toString(36):"",r="";function e(){var t=Date.now(),n=e.last||t;return e.last=t>n?t:n+1}function i(t){return(t||"")+n+e().toString(36)}}}});
 //# sourceMappingURL=chunk-eee526ef.js.map

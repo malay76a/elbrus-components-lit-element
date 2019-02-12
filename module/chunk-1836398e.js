@@ -1,35 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcApp = _decorate([customElement('uc-app')], function (_initialize, _LitElement) {
-  class UcApp extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcApp,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: Boolean
-      })],
-      key: "comparePanel",
-
-      value() {
-        return false;
-      }
-
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as e,b as o,c as t,d,e as a,f as r}from"./chunk-96426fcb.js";e([o("uc-app")],function(e,o){return{F:class extends o{constructor(...o){super(...o),e(this)}},d:[{kind:"field",decorators:[t({type:Boolean})],key:"comparePanel",value:()=>!1},{kind:"field",static:!0,key:"styles",value:()=>d`
         :host {
             display: flex;
             flex-direction: column;
@@ -81,19 +50,8 @@ let UcApp = _decorate([customElement('uc-app')], function (_initialize, _LitElem
                 margin-top: 20px;
             }
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return a`
             <slot></slot>
-            ${this.comparePanel ? html`<uc-compare-panel></uc-compare-panel>` : ''}
-        `;
-      }
-    }]
-  };
-}, LitElement);
+            ${this.comparePanel?a`<uc-compare-panel></uc-compare-panel>`:""}
+        `}}]}},r);
 //# sourceMappingURL=chunk-1836398e.js.map

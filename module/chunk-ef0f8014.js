@@ -1,18 +1,2 @@
-let pid = process && process.pid ? process.pid.toString(36) : '';
-let address = '';
-
-function now() {
-  var time = Date.now();
-  var last = now.last || time;
-  return now.last = time > last ? time : last + 1;
-}
-
-function process(prefix) {
-  return (prefix || '') + pid + now().toString(36);
-}
-function uniqid (prefix) {
-  return (prefix || '') + address + pid + now().toString(36);
-}
-
-export { uniqid as a };
+let t=i&&i.pid?i.pid.toString(36):"",n="";function r(){var t=Date.now(),n=r.last||t;return r.last=t>n?t:n+1}function i(n){return(n||"")+t+r().toString(36)}function o(i){return(i||"")+n+t+r().toString(36)}export{o as a};
 //# sourceMappingURL=chunk-ef0f8014.js.map

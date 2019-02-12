@@ -1,24 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcContainer = _decorate([customElement('uc-container')], function (_initialize, _LitElement) {
-  class UcContainer extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcContainer,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as t,b as i,d,e as a,f as e}from"./chunk-96426fcb.js";t([i("uc-container")],function(t,i){return{F:class extends i{constructor(...i){super(...i),t(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>d`
         :host {
             display: block;
             margin-left: auto;
@@ -46,18 +26,7 @@ let UcContainer = _decorate([customElement('uc-container')], function (_initiali
                 width: 100%; 
             } 
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return a`
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},e);
 //# sourceMappingURL=chunk-9e5cb087.js.map

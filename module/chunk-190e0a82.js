@@ -1,36 +1,4 @@
-import { a as _decorate, b as customElement, d as css, g as _get, h as _getPrototypeOf, e as html, f as LitElement } from './chunk-96426fcb.js';
-import { b as isXs } from './chunk-bb8482fa.js';
-
-let UcPlpChengeTyped = _decorate([customElement('uc-plp-chenge-typed')], function (_initialize, _LitElement) {
-  class UcPlpChengeTyped extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcPlpChengeTyped,
-    d: [{
-      kind: "get",
-      static: true,
-      key: "properties",
-      value: function properties() {
-        return {
-          type: {
-            type: String
-          }
-        };
-      }
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as e,b as t,d as i,g as a,h as d,e as s,f as l}from"./chunk-96426fcb.js";import{b as o}from"./chunk-bb8482fa.js";e([t("uc-plp-chenge-typed")],function(e,t){class l extends t{constructor(...t){super(...t),e(this)}}return{F:l,d:[{kind:"get",static:!0,key:"properties",value:function(){return{type:{type:String}}}},{kind:"field",static:!0,key:"styles",value:()=>i`
         :host {display: inline-block}
         .list[data-active] {
             background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMyIgdmlld0JveD0iMCAwIDE4IDEzIj4gICAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMCAwaDE4djNIMFYwem0wIDVoMTh2M0gwVjV6bTAgNWgxOHYzSDB2LTN6Ii8+PC9zdmc+); }
@@ -75,115 +43,26 @@ let UcPlpChengeTyped = _decorate([customElement('uc-plp-chenge-typed')], functio
             background-color: #66c05d; }
         .toggler div[data-active] svg {
             fill: #ffffff; }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "firstUpdated",
-      value: function firstUpdated(_changedProperties) {
-        _get(_getPrototypeOf(UcPlpChengeTyped.prototype), "firstUpdated", this).call(this, _changedProperties);
-
-        this.changeTypeHandler(this.type);
-      }
-    }, {
-      kind: "method",
-      key: "changeType",
-      value: function changeType(event) {
-        event.stopPropagation();
-        this.type = event.currentTarget.classList.item(0);
-        this.changeTypeHandler(this.type);
-      }
-    }, {
-      kind: "method",
-      key: "changeTypeHandler",
-      value: function changeTypeHandler(type) {
-        let event = new CustomEvent('plpChangeType', {
-          detail: type
-        });
-        this.dispatchEvent(event);
-      }
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        const isList = this.type === 'list';
-        return html`
+    `},{kind:"method",key:"firstUpdated",value:function(e){a(d(l.prototype),"firstUpdated",this).call(this,e),this.changeTypeHandler(this.type)}},{kind:"method",key:"changeType",value:function(e){e.stopPropagation(),this.type=e.currentTarget.classList.item(0),this.changeTypeHandler(this.type)}},{kind:"method",key:"changeTypeHandler",value:function(e){let t=new CustomEvent("plpChangeType",{detail:e});this.dispatchEvent(t)}},{kind:"method",key:"render",value:function(){const e="list"===this.type;return s`
             <div class="toggler">
                 <div class="list" 
-                    ?data-active="${isList}" 
+                    ?data-active="${e}" 
                     @click="${this.changeType}"></div>
                 <div class="card" 
-                    ?data-active="${!isList}" 
+                    ?data-active="${!e}" 
                     @click="${this.changeType.bind(this)}"></div>
             </div>
-        `;
-      }
-    }]
-  };
-}, LitElement);
-
-let UcPlpWrapper = _decorate([customElement('uc-plp-wrapper')], function (_initialize, _LitElement) {
-  class UcPlpWrapper extends _LitElement {
-    constructor() {
-      super();
-
-      _initialize(this);
-
-      this.sorted = false;
-      this.showed = false;
-      this.typed = false;
-    }
-
-  }
-
-  return {
-    F: UcPlpWrapper,
-    d: [{
-      kind: "get",
-      static: true,
-      key: "properties",
-      value: function properties() {
-        return {
-          sorted: {
-            type: Boolean
-          },
-          showed: {
-            type: Boolean
-          },
-          typed: {
-            type: Boolean
-          }
-        };
-      }
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+        `}}]}},l),e([t("uc-plp-wrapper")],function(e,t){return{F:class extends t{constructor(){super(),e(this),this.sorted=!1,this.showed=!1,this.typed=!1}},d:[{kind:"get",static:!0,key:"properties",value:function(){return{sorted:{type:Boolean},showed:{type:Boolean},typed:{type:Boolean}}}},{kind:"field",static:!0,key:"styles",value:()=>i`
         .option {
             margin-bottom: 10px; }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
-            ${this.sorted || this.showed || this.typed ? html`
+    `},{kind:"method",key:"render",value:function(){return s`
+            ${this.sorted||this.showed||this.typed?s`
                 <div class="option">
-                    ${this.typed && !isXs() ? html`
+                    ${this.typed&&!o()?s`
                         <uc-plp-chenge-typed></uc-plp-chenge-typed>
-                    ` : html``}
+                    `:s``}
                 </div>
-            ` : html``}
+            `:s``}
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},l);
 //# sourceMappingURL=chunk-190e0a82.js.map

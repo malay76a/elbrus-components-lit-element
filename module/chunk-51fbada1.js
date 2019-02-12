@@ -1,24 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UCNckd = _decorate([customElement('uc-nckd')], function (_initialize, _LitElement) {
-  class UCNckd extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UCNckd,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as e,b as t,d as n,e as s,f as o}from"./chunk-96426fcb.js";e([t("uc-nckd")],function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>n`
         :host {
             height: 40px;
             background-color: #fce300;
@@ -36,18 +16,7 @@ let UCNckd = _decorate([customElement('uc-nckd')], function (_initialize, _LitEl
             text-transform: uppercase;
             font-weight: bold;
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return s`
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},o);
 //# sourceMappingURL=chunk-51fbada1.js.map

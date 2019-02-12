@@ -1,39 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcPlpList = _decorate([customElement('uc-plp-list')], function (_initialize, _LitElement) {
-  class UcPlpList extends _LitElement {
-    constructor() {
-      super();
-
-      _initialize(this);
-
-      this.typed = 'list';
-      window.addEventListener('plpChangeType', this.handleChangeTypeList);
-    }
-
-  }
-
-  return {
-    F: UcPlpList,
-    d: [{
-      kind: "get",
-      static: true,
-      key: "properties",
-      value: function properties() {
-        return {
-          typed: {
-            type: String,
-            reflect: true
-          }
-        };
-      }
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as t,b as e,d as i,e as d,f as s}from"./chunk-96426fcb.js";t([e("uc-plp-list")],function(t,e){return{F:class extends e{constructor(){super(),t(this),this.typed="list",window.addEventListener("plpChangeType",this.handleChangeTypeList)}},d:[{kind:"get",static:!0,key:"properties",value:function(){return{typed:{type:String,reflect:!0}}}},{kind:"field",static:!0,key:"styles",value:()=>i`
         :host {
             display: -ms-grid;
             display: grid;
@@ -57,24 +22,7 @@ let UcPlpList = _decorate([customElement('uc-plp-list')], function (_initialize,
                 grid-template-columns: repeat(3, 1fr);
                 grid-row-gap: 20px;
                 grid-column-gap: 20px; } }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "handleChangeTypeList",
-      value: function handleChangeTypeList(event) {
-        this.typed = event.detail;
-      }
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"handleChangeTypeList",value:function(t){this.typed=t.detail}},{kind:"method",key:"render",value:function(){return d`
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},s);
 //# sourceMappingURL=chunk-200d1866.js.map

@@ -1,48 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-import { a as isMobile } from './chunk-bb8482fa.js';
-import './chunk-e5954f7a.js';
-
-let UcHeaderBasket = _decorate([customElement('uc-header-basket')], function (_initialize, _LitElement) {
-  class UcHeaderBasket extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderBasket,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: Number
-      })],
-      key: "count",
-
-      value() {
-        return 0;
-      }
-
-    }, {
-      kind: "field",
-      decorators: [property({
-        type: String
-      })],
-      key: "dataList",
-
-      value() {
-        return '';
-      }
-
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as M,b as t,c as i,d as j,e as L,f as e}from"./chunk-96426fcb.js";import{a as u}from"./chunk-bb8482fa.js";import"./chunk-e5954f7a.js";M([t("uc-header-basket")],function(M,t){return{F:class extends t{constructor(...t){super(...t),M(this)}},d:[{kind:"field",decorators:[i({type:Number})],key:"count",value:()=>0},{kind:"field",decorators:[i({type:String})],key:"dataList",value:()=>""},{kind:"field",static:!0,key:"styles",value:()=>j`
         :host {
             position: relative;
             display: flex;
@@ -157,23 +113,12 @@ let UcHeaderBasket = _decorate([customElement('uc-header-basket')], function (_i
             top: calc(100% - 1px);
             right: -1px;
             display: none; }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return L`
             <slot></slot>
             <div class="basket-list-icon" data-count="${this.count}"></div>
-            ${isMobile() ? html`` : html`
+            ${u()?L``:L`
                 <div class="basket-list-text">КОРЗИНА</div>
                 <uc-header-list-popup datatype="buy-list" datalist="${this.dataList}"></uc-header-list-popup>
             `}
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},e);
 //# sourceMappingURL=chunk-340f8ff6.js.map

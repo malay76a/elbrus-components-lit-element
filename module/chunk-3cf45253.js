@@ -1,40 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, g as _get, h as _getPrototypeOf, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcBreadcrumbItem = _decorate([customElement('uc-breadcrumb-item')], function (_initialize, _LitElement) {
-  class UcBreadcrumbItem extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcBreadcrumbItem,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: String,
-        reflect: true
-      })],
-      key: "icon",
-
-      value() {
-        return '';
-      }
-
-    }, {
-      kind: "field",
-      key: "anchor",
-      value: void 0
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as t,b as e,c as i,d as o,g as a,h as d,e as n,f as r}from"./chunk-96426fcb.js";t([e("uc-breadcrumb-item")],function(t,e){class r extends e{constructor(...e){super(...e),t(this)}}return{F:r,d:[{kind:"field",decorators:[i({type:String,reflect:!0})],key:"icon",value:()=>""},{kind:"field",key:"anchor",value:void 0},{kind:"field",static:!0,key:"styles",value:()=>o`
         :host {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -114,50 +78,11 @@ let UcBreadcrumbItem = _decorate([customElement('uc-breadcrumb-item')], function
                 width: 0.85714em;
                 height: 0.71429em;
                 margin-right: 0.35714em; } }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "connectedCallback",
-      value: function connectedCallback() {
-        _get(_getPrototypeOf(UcBreadcrumbItem.prototype), "connectedCallback", this).call(this);
-
-        this.anchor = this.querySelector('a');
-      }
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
-            ${this.icon ? html`<div class={this.icon}></div>` : html``}
+    `},{kind:"method",key:"connectedCallback",value:function(){a(d(r.prototype),"connectedCallback",this).call(this),this.anchor=this.querySelector("a")}},{kind:"method",key:"render",value:function(){return n`
+            ${this.icon?n`<div class={this.icon}></div>`:n``}
             <slot />
-            ${this.anchor ? html`<div class="next"></div>` : html``}
-        `;
-      }
-    }]
-  };
-}, LitElement);
-
-let UcBreadcrumbList = _decorate([customElement('uc-breadcrumb-list')], function (_initialize, _LitElement) {
-  class UcBreadcrumbList extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcBreadcrumbList,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+            ${this.anchor?n`<div class="next"></div>`:n``}
+        `}}]}},r),t([e("uc-breadcrumb-list")],function(t,e){class i extends e{constructor(...e){super(...e),t(this)}}return{F:i,d:[{kind:"field",static:!0,key:"styles",value:()=>o`
         :host {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -189,28 +114,7 @@ let UcBreadcrumbList = _decorate([customElement('uc-breadcrumb-list')], function
             ::slotted(uc-breadcrumb-item) {
                 margin-right: 0.14286em;
                 margin-bottom: 0.28571em; } }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "firstUpdated",
-      value: function firstUpdated(_changedProperties) {
-        _get(_getPrototypeOf(UcBreadcrumbList.prototype), "firstUpdated", this).call(this, _changedProperties); // дичь, так нельзя делать
-
-
-        const firstElement = this.querySelector('uc-breadcrumb-item');
-        firstElement.setAttribute('icon', 'house');
-      }
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"firstUpdated",value:function(t){a(d(i.prototype),"firstUpdated",this).call(this,t),this.querySelector("uc-breadcrumb-item").setAttribute("icon","house")}},{kind:"method",key:"render",value:function(){return n`
             <slot></slot>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},r);
 //# sourceMappingURL=chunk-3cf45253.js.map

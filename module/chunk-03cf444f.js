@@ -1,25 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-import { a as isMobile } from './chunk-bb8482fa.js';
-
-let UcHeaderCatalog = _decorate([customElement('uc-header-catalog')], function (_initialize, _LitElement) {
-  class UcHeaderCatalog extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderCatalog,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as i,b as t,d as e,e as a,f as g}from"./chunk-96426fcb.js";import{a as d}from"./chunk-bb8482fa.js";i([t("uc-header-catalog")],function(i,t){return{F:class extends t{constructor(...t){super(...t),i(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>e`
         :host {
             display: flex;
             justify-content: center;
@@ -90,21 +69,10 @@ let UcHeaderCatalog = _decorate([customElement('uc-header-catalog')], function (
             background-position: center;
             background-repeat: no-repeat; 
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return isMobile() ? html`
+    `},{kind:"method",key:"render",value:function(){return d()?a`
             <div class="hamburger"></div>
-        ` : html`
+        `:a`
             <slot />
             <div class="triangle"></div>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},g);
 //# sourceMappingURL=chunk-03cf444f.js.map

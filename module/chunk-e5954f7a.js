@@ -1,46 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, f as LitElement, e as html } from './chunk-96426fcb.js';
-
-let UcHeaderListPopup = _decorate([customElement('uc-header-list-popup')], function (_initialize, _LitElement) {
-  class UcHeaderListPopup extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcHeaderListPopup,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: String
-      })],
-      key: "dataType",
-
-      value() {
-        return '';
-      }
-
-    }, {
-      kind: "field",
-      decorators: [property({
-        type: Array
-      })],
-      key: "dataList",
-
-      value() {
-        return [];
-      }
-
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as e,b as t,c as i,d as s,f as a,e as d}from"./chunk-96426fcb.js";e([t("uc-header-list-popup")],function(e,t){return{F:class extends t{constructor(...t){super(...t),e(this)}},d:[{kind:"field",decorators:[i({type:String})],key:"dataType",value:()=>""},{kind:"field",decorators:[i({type:Array})],key:"dataList",value:()=>[]},{kind:"field",static:!0,key:"styles",value:()=>s`
         :host {
             display: flex;
             flex-direction: column;
@@ -62,40 +20,12 @@ let UcHeaderListPopup = _decorate([customElement('uc-header-list-popup')], funct
             text-align: left;
             font-style: italic;
         }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        let content;
-
-        if (this.dataList.length < 1) {
-          switch (this.dataType) {
-            case 'shop-list':
-              content = html`
+    `},{kind:"method",key:"render",value:function(){let e;if(this.dataList.length<1)switch(this.dataType){case"shop-list":e=d`
                         <div class="header">Список покупок пуст</div>
                         <div class="text">Просто добавьте сюда товары, распечатайте список и пользуйтесь им в магазине.</div>
                         <div class="text">Список покупок не является резервом заказа в Магазине!</div>
-                    `;
-              break;
-
-            case 'buy-list':
-              content = html`
+                    `;break;case"buy-list":e=d`
                         <div class="header">Корзина пуста</div>
                         <div class="text">Просто добавьте сюда товары</div>
-                    `;
-              break;
-
-            default:
-              break;
-          }
-        }
-
-        return content;
-      }
-    }]
-  };
-}, LitElement);
+                    `}return e}}]}},a);
 //# sourceMappingURL=chunk-e5954f7a.js.map

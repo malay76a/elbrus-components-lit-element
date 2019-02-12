@@ -1,35 +1,4 @@
-import { a as _decorate, b as customElement, c as property, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcPageTitle = _decorate([customElement('uc-page-title')], function (_initialize, _LitElement) {
-  class UcPageTitle extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcPageTitle,
-    d: [{
-      kind: "field",
-      decorators: [property({
-        type: String
-      })],
-      key: "counter",
-
-      value() {
-        return '';
-      }
-
-    }, {
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as t,b as i,c as a,d as n,e,f as o}from"./chunk-96426fcb.js";t([i("uc-page-title")],function(t,i){return{F:class extends i{constructor(...i){super(...i),t(this)}},d:[{kind:"field",decorators:[a({type:String})],key:"counter",value:()=>""},{kind:"field",static:!0,key:"styles",value:()=>n`
         :host {
             display: block; }
         @media (min-width: 1200px) {
@@ -72,19 +41,8 @@ let UcPageTitle = _decorate([customElement('uc-page-title')], function (_initial
             ::slotted(h1),
                 span {
                 font-size: 1.28571em; } }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return e`
             <slot></slot>
-            ${this.counter ? html`<span>(${this.counter})</span>` : html``}
-        `;
-      }
-    }]
-  };
-}, LitElement);
+            ${this.counter?e`<span>(${this.counter})</span>`:e``}
+        `}}]}},o);
 //# sourceMappingURL=chunk-3cf4438c.js.map

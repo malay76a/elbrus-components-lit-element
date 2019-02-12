@@ -1,24 +1,4 @@
-import { a as _decorate, b as customElement, d as css, e as html, f as LitElement } from './chunk-96426fcb.js';
-
-let UcSeoBlock = _decorate([customElement('uc-seo-block')], function (_initialize, _LitElement) {
-  class UcSeoBlock extends _LitElement {
-    constructor(...args) {
-      super(...args);
-
-      _initialize(this);
-    }
-
-  }
-
-  return {
-    F: UcSeoBlock,
-    d: [{
-      kind: "field",
-      static: true,
-      key: "styles",
-
-      value() {
-        return css`
+import{a as t,b as e,d as i,e as d,f as o}from"./chunk-96426fcb.js";t([e("uc-seo-block")],function(t,e){return{F:class extends e{constructor(...e){super(...e),t(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>i`
         :host {
             display: block;
             width: 100%;
@@ -53,20 +33,9 @@ let UcSeoBlock = _decorate([customElement('uc-seo-block')], function (_initializ
             ::slotted(p) {
                 font-size: 0.85714em;
                 line-height: 1.66667em; } }
-    `;
-      }
-
-    }, {
-      kind: "method",
-      key: "render",
-      value: function render() {
-        return html`
+    `},{kind:"method",key:"render",value:function(){return d`
             <div>
                 <slot></slot>
             </div>
-        `;
-      }
-    }]
-  };
-}, LitElement);
+        `}}]}},o);
 //# sourceMappingURL=chunk-dc05eb28.js.map
