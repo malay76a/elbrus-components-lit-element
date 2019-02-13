@@ -431,18 +431,19 @@
     </footer>
     <!--<link rel="stylesheet" href="/build/elbrusui.css">-->
 </uc-app>
-
+<!-- <script>
+    import("./module/index.js");
+    window.supportsDynamicImport = true;
+</script> -->
 <script>
-    try {
-        import("./module/index.js");
-    } catch (e) {
+//     if (!window.supportsDynamicImport) {
         const systemJsLoaderTag = document.createElement('script');
         systemJsLoaderTag.src = 'https://unpkg.com/systemjs@2.0.0/dist/s.min.js';
         systemJsLoaderTag.addEventListener('load', function () {
             System.import('./nomodule/index.js');
         });
         document.head.appendChild(systemJsLoaderTag);
-    }
+//     }
 </script>
 </body>
 </html>
